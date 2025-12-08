@@ -2,6 +2,8 @@
 
 A premium, Typeform-inspired web application that validates startup ideas through an intelligent 7-question conversation powered by OpenAI GPT-4o-mini.
 
+Visit: https://startups-validator.vercel.app
+
 ![Demo](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
