@@ -383,6 +383,6 @@ If you find this project helpful, please:
 
 ---
 
-**Built with ❤️ by [Your Name]**
+**Built by yours truly Rishik Muthyala**
 
 *Validating startup ideas, one conversation at a time.*
