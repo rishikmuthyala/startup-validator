@@ -337,7 +337,7 @@ export default function LandingPage() {
             className="space-y-3"
           >
             <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 text-center leading-relaxed font-medium px-4">
-              Shitty or Worthy? Let&apos;s find out.
+              Worth Building or Waste of Time?
             </p>
           </motion.div>
 
