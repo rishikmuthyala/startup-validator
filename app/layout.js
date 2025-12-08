@@ -22,6 +22,7 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -99,6 +100,31 @@ export default function RootLayout({ children }) {
             },
           }}
         />
+
+        {/* 
+          VERCEL WEB ANALYTICS:
+          Tracks page views and user behavior automatically
+          
+          WHAT IT DOES:
+          - Counts page views
+          - Tracks unique visitors
+          - Records page performance (Web Vitals)
+          - No cookies needed (privacy-friendly)
+          
+          HOW IT WORKS:
+          - Automatically sends pageview events
+          - Tracks Core Web Vitals (LCP, FID, CLS)
+          - Data visible in Vercel Dashboard → Analytics
+          
+          FREE TIER LIMITS:
+          - 100k events/month (more than enough to start)
+          - 30-day data retention
+          - Real-time updates
+          
+          VIEW YOUR DATA:
+          https://vercel.com/[username]/startup-validator/analytics
+        */}
+        <Analytics />
       </body>
     </html>
   );

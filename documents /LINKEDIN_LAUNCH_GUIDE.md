@@ -72,7 +72,7 @@ npm run build
 
 1. Go to https://github.com/new
 2. Repository name: `startup-validator` (or your preferred name)
-3. Description: "AI-powered startup idea validator with 7-question conversation and story mode results"
+3. Description: "AI-powered startup idea validator with 8-question conversation and story mode results"
 4. **Make it PUBLIC** (so others can see it on your LinkedIn)
 5. **DO NOT** initialize with README (you already have one)
 6. Click **"Create repository"**
