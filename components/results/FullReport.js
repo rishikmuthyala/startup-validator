@@ -84,12 +84,18 @@ export function FullReport({ analysis, onReviewStory }) {
 
       const data = await response.json()
 
-      // Copy to clipboard
-      await navigator.clipboard.writeText(data.url)
-
-      // Show success
-      toast.success('Link copied to clipboard!')
+      // Set URL first (so it's visible even if clipboard fails)
       setShareUrl(data.url)
+
+      // Try to copy to clipboard (might fail due to permissions)
+      try {
+        await navigator.clipboard.writeText(data.url)
+        toast.success('Link copied to clipboard!')
+      } catch (clipboardError) {
+        // Clipboard failed, but URL is still available
+        console.warn('[Share] Clipboard access denied:', clipboardError)
+        toast.success('Share link generated! Copy it below.')
+      }
 
     } catch (error) {
       console.error('[Share] Error:', error)
