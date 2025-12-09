@@ -588,7 +588,7 @@ Be honest about what "no competitors" means for this specific idea.
     console.log('[Analysis API] Calling GPT-4 for comprehensive analysis...');
     
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4-turbo',
+      model: 'gpt-4o-mini',
       messages: [
         {
           role: 'system',
@@ -628,7 +628,7 @@ Be honest about what "no competitors" means for this specific idea.
       console.log('[Analysis API] Retrying with stricter JSON instructions...');
       
       const retryCompletion = await openai.chat.completions.create({
-        model: 'gpt-4-turbo',
+        model: 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
